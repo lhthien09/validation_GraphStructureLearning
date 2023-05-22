@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+#log files
+*.log
+tb_logs/
+lightning_logs/
+wandb/
+logs
+
+#Keops related generate files
+CMakeCache.txt
+CMakeFiles/
+build-libKeOps*
+
+#Do not add jupyter notebooks
+*.ipynb
+.ipynb_checkpoints/
+
+#other
+EV_GCN/
+dgcnn.pytorch/
+*.tikz
+stats_*
+train_*
+data/
+
+# how_to_install.txt
+how_to_install.txt
