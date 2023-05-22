@@ -18,3 +18,30 @@ As part of the work, we will:
 * discuss future work.
 Keywords: graph neural network, graph structure learning, empirical validations, citation network applications.
 
+## Installation
+
+Create a Conda virtual environment and install all the necessary packages
+
+```
+conda create -n DGMenv python=3.8
+conda activate DGMenv
+```
+
+```
+conda install -c anaconda cmake=3.19
+conda install pytorch==1.8.1 torchvision==0.9.1 torchaudio==0.8.1 cudatoolkit=10.1 -c pytorch
+pip install pytorch_lightning==1.3.8
+
+pip install torch-scatter==2.0.8 -f https://data.pyg.org/whl/torch-1.8.1+cu101.html
+pip install torch-sparse==0.6.12 -f https://data.pyg.org/whl/torch-1.8.1+cu101.html
+pip install torch-geometric
+```
+
+## Training
+
+For the dDGM framework, to train a model with the default options run the following command:
+```
+python train.py
+``` 
+
+Other frameworks, codes are presented in the Jupyter notebook.
