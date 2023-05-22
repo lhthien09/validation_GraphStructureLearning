@@ -16,6 +16,7 @@ As part of the work, we will:
 * empirically validate GSL methods by accuracy scores with citation network datasets.
 * analyze the mechanism of these approaches and analyze the influence of hyperparameters on model’s behavior.
 * discuss future work.
+
 Keywords: graph neural network, graph structure learning, empirical validations, citation network applications.
 
 
