@@ -27,7 +27,6 @@ dgcnn.pytorch/
 *.tikz
 stats_*
 train_*
-data/
 
 # how_to_install.txt
 how_to_install.txt
