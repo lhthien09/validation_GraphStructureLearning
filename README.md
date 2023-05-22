@@ -45,7 +45,7 @@ For the dDGM framework, to train a model with the default options run the follow
 python train.py
 ``` 
 
-Other frameworks, codes are presented in the Jupyter notebook.
+Other frameworks, codes are presented in the [Jupyter notebook[(https://github.com/lhthien09/validation_GraphStructureLearning).
 
 ## Important files
 ### ./DGMlib
