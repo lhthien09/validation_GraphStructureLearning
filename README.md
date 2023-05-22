@@ -71,9 +71,9 @@ Main file to run experiments: simply run **python train.py** with parameters:
 9. --ffun: graph embedding function types: use state-of-the-art layers: gcn, gat (+mlp, id for experiments)
 10. --k: k param for k-gumbel sampling
 11. --pooling: pooling type (default = add)
-12. --dropout: drop out probability during training (not touching)
-13. --lr: learning rate (not touching)
-14. --test_eval: number of epoch for evaluation (not touching)
+12. --dropout: drop out probability during training
+13. --lr: learning rate 
+14. --test_eval: number of epoch for evaluation 
 
 ## Notes: all settings above are for dDGM sampling.
 
