@@ -45,3 +45,34 @@ python train.py
 ``` 
 
 Other frameworks, codes are presented in the Jupyter notebook.
+
+## Important files
+### ./DGMlib
+1. model_dDGM.py: discrete DGM model definition, training/validation code
+2. layers.py: include some different layers for experiments
+    - Euclidean distance
+    - Poincare distance
+    - Discrete DGM module
+    - Continuous DGM module
+    - MLP module
+    - Identity module
+### ./train.py
+Main file to run experiments: simply run **python train.py** with parameters:
+
+1. --num_gpus: total number of gpus
+2. --dataset: which dataset used to train (UKBiobank, Tadpole require additional changes)
+3. --fold: k-fold validation (for UKBiobank, Tadpole)
+4. --conv_layers: number of convolutional layers
+5. --dgm_layers: number of dgm layers
+6. --fc_layers: number of linear layers
+7. --pre_lc: pre linear layer setting
+8. --gfun: diffusion function types: use state-of-the-art layers: gcn, gat, edgeconv
+9. --ffun: graph embedding function types: use state-of-the-art layers: gcn, gat (+mlp, id for experiments)
+10. --k: k param for k-gumbel sampling
+11. --pooling: pooling type (default = add)
+12. --dropout: drop out probability during training (not touching)
+13. --lr: learning rate (not touching)
+14. --test_eval: number of epoch for evaluation (not touching)
+
+## Notes: all settings above are for dDGM sampling.
+
