@@ -1,0 +1,18 @@
+# Install pytorch 1.8.2
+# Taken from https://pytorch.org/get-started/locally/
+conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch-lts -c conda-forge
+
+# Install pytorch-lightning (per README)
+pip install pytorch_lightning==1.3.8
+
+# Build torch geometric from source
+pip install torch-scatter==2.0.8 torch-sparse==0.6.12 torch-geometric
+
+# Fix problems with torchmetrics
+pip install torchmetrics==0.6.0
+
+# Reinstall pykeops to be compiled with GPU
+pip install pykeops
+
+# Example conda env
+conda activate DGM
